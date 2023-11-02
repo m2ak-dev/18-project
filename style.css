@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #000000;
+    box-shadow: 0 5px 10px rgba(84, 71, 71, 0.22);
+}
+
+.music-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song-img {
+    margin-right: 10px;
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 10px rgba(84, 71, 71, 0.22);
+}
+
+.music-player {
+    border-radius: 20px;
+    background-color: #666262;
+    width: 700px;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.contentmusic {
+    text-align: left;
+}
+
+.music-player h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+
+.music-player p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.display1 {
+    display: flex;
+    margin-bottom: 25px;
+    border-top-left-radius: 1100px;
+    border-bottom-left-radius: 1100px;
+    border-bottom-right-radius: 1100px;
+    border-top-right-radius: 20px;
+    background-color: rgba(177, 176, 176, 0.484);
+
+}
+
+#progress {
+    align-items: center;
+    width: 95%;
+    height: 6px;
+    background: #9a9899;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #a19ea0;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 10px rgba(84, 71, 71, 0.22);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mp3audio {
+    display: none;
+}
+
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #979093;
+    box-shadow: 0 5px 10px rgba(84, 71, 71, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0 5px 10px rgba(84, 71, 71, 0.22);
+}
